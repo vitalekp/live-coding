@@ -1,16 +1,43 @@
+* {
+  box-sizing: border-box; }
+
 body {
-  background: #f7f7f7; }
+  font-family: Karla, sans-serif;
+  background-color: #f7f7f7f7;
+  width: 90%;
+  margin: 0px auto; }
 
 .navigation {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding: 20px 0; }
   .navigation__title {
-    font-size: 40px;
-    padding: 20px; }
+    flex-grow: 1;
+    font-size: 2.25em;
+    font-weight: 400px;
+    letter-spacing: 0.1em; }
+    @media screen and (max-width: 600px) {
+      .navigation__title {
+        font-size: 35px; } }
   .navigation__search {
     display: flex;
-    align-items: center;
-    padding: 20px; }
+    align-items: center; }
+  .navigation__filter {
+    display: flex;
+    flex-direction: column; }
+  .navigation__label {
+    font-size: 0.75em;
+    font-weight: 700;
+    color: #666666;
+    text-transform: uppercase; }
+  .navigation__select {
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    background-color: #f7f7f7f7;
+    font-weight: 700;
+    font-size: 16px;
+    font-style: normal; }
   .navigation__sort {
     margin-left: 20px; }
 
@@ -19,24 +46,43 @@ body {
   flex-wrap: wrap; }
 
 .product {
-  flex-shrink: 0;
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-basis: 50%;
   background: #fff;
-  padding: 20px 30px; }
-  .product__img img {
-    min-width: 100%; }
-  .product__info {
+  border: 0.5px solid #f7f7f7f7;
+  margin-right: 0; }
+  @media screen and (min-width: 600px) {
+    .product {
+      flex-basis: 25%; } }
+  @media screen and (min-width: 900px) {
+    .product {
+      flex-basis: 20%; } }
+  .product__sale {
+    position: absolute;
+    padding: 3px 6px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 20px;
+    color: #fff;
+    background: #0000ff;
     text-align: center; }
-  .product__name {
-    margin-top: 15px;
-    font-size: 25px; }
+    @media screen and (max-width: 600px) {
+      .product__sale {
+        padding: 4px 10px; } }
+    @media screen and (min-width: 800px) {
+      .product__sale {
+        padding: 4px 10px; } }
+  .product__img img {
+    max-width: 100%;
+    padding: 30px 15px 20px 15px; }
+  .product__info {
+    text-align: center;
+    padding-bottom: 25px; }
   .product__price {
-    color: #808080;
-    font-size: 20px; }
+    margin-top: 7px;
+    font-size: 0.875em;
+    color: #666666; }
   .product__avail {
     display: none; }
 
