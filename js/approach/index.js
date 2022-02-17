@@ -32,5 +32,5 @@ function getPrimes(num) {
   }
 }
 
-// test data
+// TEST DATA
 getPrimes(10);
