@@ -18,7 +18,7 @@ module.exports = {
     'no-constant-condition': 0,
     'no-shadow': 0,
     'no-restricted-globals': 0,
-    // 'no-unused-vars': 0,
+    'no-unused-vars': 0,
     // 'default-case': 0,
     'no-underscore-dangle': 0,
     'func-names': 0,
