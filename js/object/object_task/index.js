@@ -51,13 +51,14 @@ function compareObjects(obj1, obj2) {
   if (!(Object.keys(obj1).length === Object.keys(obj2).length)) {
     return false;
   }
-  const objOneKeys = Object.keys(obj1);
-  const objTwoKeys = Object.keys(obj2);
-  const objOneValues = Object.values(obj1);
-  const objTwoValues = Object.values(obj2);
+  const objFirstKeys = Object.keys(obj1);
+  const objSecondKeys = Object.keys(obj2);
+  const objFirstValues = Object.values(obj1);
+  const objSecondValues = Object.values(obj2);
 
-  return objOneKeys.every(
-    (el, index) => (el === objTwoKeys[index]) === (objOneValues[index] === objTwoValues[index]),
+  return objFirstKeys.every(
+    (key, index) =>
+      (key === objSecondKeys[index]) === (objFirstValues[index] === objSecondValues[index]),
   );
 }
 
