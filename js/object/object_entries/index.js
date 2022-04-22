@@ -129,12 +129,12 @@
 // NORM
 
 // function compareObjects(obj1, obj2) {
-//   // const prop1 = Object.entries(obj1);
-//   // const prop2 = Object.entries(obj2);
+//   const prop1 = Object.entries(obj1);
+//   const prop2 = Object.entries(obj2);
 
-//   // if (prop1.length !== prop2.length) {
-//   //   return false;
-//   // }
+//   if (prop1.length !== prop2.length) {
+//     return false;
+//   }
 
 //   return _.isEqual(obj1, obj2);
 // }
