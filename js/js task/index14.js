@@ -21,6 +21,3 @@ const user = {
 // DATA TEST
 user.setFullName('An Sh');
 console.log(user);
-
-const arr = [{ name: 'Tom', age: 17 }];
-arr.reduce((acc, el) => {}, []);
