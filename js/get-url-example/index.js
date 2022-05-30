@@ -17,3 +17,8 @@ console.log(searchParams.get('page'));
 // console.log(getPage(locationUrl));
 
 // console.log(locationUrl.slice(locationUrl.indexOf('page'), locationUrl.indexOf('&o')));
+
+const myLocation = 'orderField=id&page=22&orderMode=desc&status=1';
+const temp = myLocation.slice(myLocation.indexOf('page') + 5);
+console.log(temp);
+console.log(temp.slice(0, temp.indexOf('&')));
